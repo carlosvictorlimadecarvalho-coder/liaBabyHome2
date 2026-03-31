@@ -9,6 +9,31 @@ html{
 body{
     background: rgb(185, 165, 141);
 }
+.card-grande-centro{
+    display: flex;
+    justify-content: center;
+    
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.objetos-card{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.objetos-card h3{
+    font-size: 20px;
+    font-weight: 550;
+}
+.card-grande img {
+  width: 350px;   /* controla o tamanho */
+  max-width: 100%;
+  border-radius: 10px;
+}
 .container{
     display: grid;
 
@@ -89,6 +114,16 @@ body{
         transform: translateX(0px);
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,6 +291,12 @@ button{
     width: 450px;
     height: 500px;
 }
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,8 @@ import HorizontalScroll from "../pages/HorizontalScroll";
 import Desejados from "../pages/Desejados";
 import Mantas from "../pages/Mantas"
 
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 
 
 
@@ -27,6 +29,7 @@ import KitBMat3 from "../assets/kit berço (3).jpeg"
 
 
 export const Home = ()=>{
+    const [produtoSelecionado, setProdutoSelecionado] = useState(null);
     return(
         <>
         <Navbar/>
@@ -52,16 +55,38 @@ export const Home = ()=>{
 
 
             {/* Trocador */}
+        
+            
+        
         <section id="trocador">
         <div className="container4">
             <h2 id="categoria2">Trocador</h2>
             <div className="cards">
-                <div className="cardTrocador">
+                <div className="cardTrocador" 
+                            onClick={() => setProdutoSelecionado({
+                        nome: "Trocador Americano",
+                        descricao: "Super confortável",
+                        imagem: Trocador
+                        })
+                    }>
                     <img src={Trocador} alt="trocador americano"/>
                     <p>Trocador Americano</p>
                 </div>
             </div>
         </div>
+        {produtoSelecionado && (
+  <Modal onClose={() => setProdutoSelecionado(null)}>
+    
+        <div className="card-grande">
+        <img src={produtoSelecionado.imagem} alt="" />
+
+        <div className="objetos-card">
+            <h3>{produtoSelecionado.nome}</h3>
+            <p>{produtoSelecionado.descricao}</p>
+        </div>
+        </div>
+  </Modal>
+)}
     </section>
 
 
@@ -131,7 +156,7 @@ export const Home = ()=>{
 
         <Mantas/>
 
-
+        {/*Segura Neném*/}
         <section id="segura">
         <div className="container9">
             <h2 id="categoria7">Segura Neném</h2>
@@ -148,7 +173,7 @@ export const Home = ()=>{
 
 
 
-
+        {/*Ninho*/}
     <section id="ninho">
         <div className="container10">
             <h2 id="categoria8">Ninho</h2>
@@ -161,7 +186,7 @@ export const Home = ()=>{
     </section>
 
 
-
+        {/* Kit - Maternidade */}
 <section id="kitBercoMaternidade">
         <div className="container11">
             <h2 id="categoria9">Kit Berço Maternidade</h2>
