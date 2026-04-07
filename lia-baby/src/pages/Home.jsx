@@ -12,11 +12,16 @@ import Modal from "../Modal/Modal";
 
 import Quarto from "../assets/quartoCopia.png";
 import Trocador from "../assets/trocador.jpeg";
+import TrocadorLado from "../assets/trocadorLado(1).jpeg";
 import Ninho from "../assets/trocador2.jpeg";
 import Amamentar from "../assets/amamentar.jpeg";
 import Amamentar2 from "../assets/amamentar (2).jpeg";
 import Amamentar3 from "../assets/amamentar (3).jpeg";
 import Amamentar4 from "../assets/amamentar(4).jpeg";
+import Amamentar5 from "../assets/amamentar(5).jpeg";
+import VideoCortinado from "../assets/video cortinado.mp4";
+import Cortinado4 from "../assets/cortinado(4).jpeg";
+import Cortinado3 from "../assets/cortinado(3).jpeg";
 import Cortinado2 from "../assets/cortinado (2).jpeg";
 import Cortinado from "../assets/cortinado.jpeg";
 import Dossel from "../assets/dossel.jpeg"
@@ -26,6 +31,7 @@ import Segura2 from "../assets/seguranenem.jpeg"
 import KitBMat from "../assets/kit berço.jpeg"
 import KitBMat2 from "../assets/kit berço (2).jpeg"
 import KitBMat3 from "../assets/kit berço (3).jpeg"
+import KitBMat4 from "../assets/kit berço (4).jpeg"
 
 
 export const Home = ()=>{
@@ -39,6 +45,8 @@ export const Home = ()=>{
         <div className="card-grande">
             <div className="modal-body">
                 <img src={produtoSelecionado.imagem} alt="" />
+                <img src={produtoSelecionado.imagem2} alt="" />
+                <video src={produtoSelecionado.video} controls alt=""/>
 
                 <div className="objetos-card">
                     <h3>{produtoSelecionado.nome}</h3>
@@ -80,7 +88,8 @@ export const Home = ()=>{
                             onClick={() => setProdutoSelecionado({
                         nome: "Trocador Americano",
                         descricao: "Super confortável",
-                        imagem: Trocador
+                        imagem: Trocador,
+                        imagem2: TrocadorLado
                         })
                     }>
                     <img src={Trocador} alt="trocador americano"/>
@@ -108,10 +117,10 @@ export const Home = ()=>{
                 <div className="cardAmamentar" onClick={() => setProdutoSelecionado({
                         nome: "Almofada de Amamentar",
                         descricao: "Ideal para apoiar o bebê durante a \n amamentação.",
-                        imagem: Amamentar2
+                        imagem: Amamentar5
                         })
                     }>
-                    <img src={Amamentar2} alt=""/>
+                    <img src={Amamentar5} alt=""/>
                 </div>
                 <div className="cardAmamentar" onClick={() => setProdutoSelecionado({
                         nome: "Almofada de Amamentar",
@@ -146,7 +155,7 @@ export const Home = ()=>{
                         imagem: Cortinado2
                         })
                     }>
-                    <img src={Cortinado2} alt="trocador americano"/>
+                    <img src={Cortinado2} alt="cortinado"/>
                 </div>
                 <div className="cardCortinado" onClick={() => setProdutoSelecionado({
                         nome: "Cortinado",
@@ -154,7 +163,17 @@ export const Home = ()=>{
                         imagem: Cortinado
                         })
                     }>
-                    <img src={Cortinado} alt="trocador americano"/>
+                    <img src={Cortinado} alt="cortinado"/>
+                </div>
+                <div className="cardCortinado" onClick={() => setProdutoSelecionado({
+                        nome: "Cortinado",
+                        descricao: "Crie um ambiente aconchegante para \n seu bebê",
+                        imagem: Cortinado3,
+                        imagem2: '',
+                        video: VideoCortinado
+                        })
+                    }>
+                    <img src={Cortinado3} alt="cortinado"/>
                 </div>
                 
             </div>
@@ -270,6 +289,14 @@ export const Home = ()=>{
                     })
                     }>
                     <img src={KitBMat3} alt="kit berço"/>
+                </div>
+                <div className="cardKitBerco" onClick={() => setProdutoSelecionado({
+                        nome: "Kit Berço Maternidade",
+                        descricao: "Ideal e confortável para seu bebê",
+                        imagem: KitBMat4                        
+                    })
+                    }>
+                    <img src={KitBMat4} alt="kit berço"/>
                 </div>
             </div>
         </div>
