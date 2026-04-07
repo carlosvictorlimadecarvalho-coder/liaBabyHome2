@@ -29,8 +29,22 @@ body{
     font-size: 20px;
     font-weight: 550;
 }
+.card-modal{
+    display: flex;
+}
+.card-grande{
+    white-space: pre-line;
+    display: flex;
+    height: 530px;
+    flex-direction: column;
+}
+.modal-body{
+    flex: 1;
+    overflow-y: auto;
+}
 .card-grande img {
-  width: 350px;   /* controla o tamanho */
+  width: 400px;
+  height: 450px;   
   max-width: 100%;
   border-radius: 10px;
 }
