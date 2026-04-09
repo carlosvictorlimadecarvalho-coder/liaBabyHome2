@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar/Navbar";
 import HorizontalScroll from "../pages/HorizontalScroll";
 import Desejados from "../pages/Desejados";
 import Mantas from "../pages/Mantas"
+import KitBmaternidade from "./KitBMaternidade";
+
+
 
 import { useState } from "react";
 import Modal from "../Modal/Modal";
@@ -24,14 +27,15 @@ import Cortinado4 from "../assets/cortinado(4).jpeg";
 import Cortinado3 from "../assets/cortinado(3).jpeg";
 import Cortinado2 from "../assets/cortinado (2).jpeg";
 import Cortinado from "../assets/cortinado.jpeg";
-import Dossel from "../assets/dossel.jpeg"
-import Dossel2 from "../assets/dossel (2).jpeg"
-import Segura from "../assets/segura.jpeg"
-import Segura2 from "../assets/seguranenem.jpeg"
-import KitBMat from "../assets/kit berço.jpeg"
-import KitBMat2 from "../assets/kit berço (2).jpeg"
-import KitBMat3 from "../assets/kit berço (3).jpeg"
-import KitBMat4 from "../assets/kit berço (4).jpeg"
+import Dossel from "../assets/dossel.jpeg";
+import Dossel2 from "../assets/dossel (2).jpeg";
+import Segura from "../assets/segura.jpeg";
+import Segura2 from "../assets/seguranenem.jpeg";
+import KitBMat from "../assets/kit berço.jpeg";
+import KitBMat2 from "../assets/kit berço (2).jpeg";
+import KitBMat3 from "../assets/kit berço (3).jpeg";
+import KitBMat4 from "../assets/kit berço (4).jpeg";
+import KitBMat5 from "../assets/kit berço (5).jpeg";
 
 
 export const Home = ()=>{
@@ -45,8 +49,12 @@ export const Home = ()=>{
         <div className="card-grande">
             <div className="modal-body">
                 <img src={produtoSelecionado.imagem} alt="" />
-                <img src={produtoSelecionado.imagem2} alt="" />
-                <video src={produtoSelecionado.video} controls alt=""/>
+
+                {produtoSelecionado.imagem2 && (
+                <img src={produtoSelecionado.imagem2} controls></img>)}
+                
+                {produtoSelecionado.video && (
+                <video src={produtoSelecionado.video} controls></video>)}
 
                 <div className="objetos-card">
                     <h3>{produtoSelecionado.nome}</h3>
@@ -57,7 +65,14 @@ export const Home = ()=>{
     </div>
     </Modal>
 )}
+
+
+
         <Navbar/>
+
+
+
+
         <header id="inicio">
             <div className="container">
                 <div className="banner">
@@ -261,47 +276,14 @@ export const Home = ()=>{
     </section>
 
 
-        {/* Kit - Maternidade */}
-<section id="kitBercoMaternidade">
-        <div className="container11">
-            <h2 id="categoria9">Kit Berço Maternidade</h2>
-            <div className="cards6">
-                <div className="cardKitBerco" onClick={() => setProdutoSelecionado({
-                        nome: "Kit Berço Maternidade",
-                        descricao: "Ideal e confortável para seu bebê",
-                        imagem: KitBMat                        
-                    })
-                    }>
-                    <img src={KitBMat} alt="kit berço"/>
-                </div>
-                <div className="cardKitBerco" onClick={() => setProdutoSelecionado({
-                        nome: "Kit Berço Maternidade",
-                        descricao: "Ideal e confortável para seu bebê",
-                        imagem: KitBMat2                        
-                    })
-                    }>
-                    <img src={KitBMat2} alt="kit berço"/>
-                </div>
-                <div className="cardKitBerco" onClick={() => setProdutoSelecionado({
-                        nome: "Kit Berço Maternidade",
-                        descricao: "Ideal e confortável para seu bebê",
-                        imagem: KitBMat3                        
-                    })
-                    }>
-                    <img src={KitBMat3} alt="kit berço"/>
-                </div>
-                <div className="cardKitBerco" onClick={() => setProdutoSelecionado({
-                        nome: "Kit Berço Maternidade",
-                        descricao: "Ideal e confortável para seu bebê",
-                        imagem: KitBMat4                        
-                    })
-                    }>
-                    <img src={KitBMat4} alt="kit berço"/>
-                </div>
-            </div>
-        </div>
-    </section>
-        </>
+
+
+    <KitBmaternidade/>
+
+
+
+
+    </>
     )
 }
 export default Home;

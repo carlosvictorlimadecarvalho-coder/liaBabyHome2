@@ -33,16 +33,25 @@ function Carrossel() {
   {produtoSelecionado && (
   
       <Modal onClose={() => setProdutoSelecionado(null)}>
+          <div className="card-modal">
+              <div className="card-grande">
+                  <div className="modal-body">
+                      <img src={produtoSelecionado.imagem} alt="" />
       
-          <div className="card-grande">
-          <img src={produtoSelecionado.imagem} alt="" />
-  
-          <div className="objetos-card">
-              <h3>{produtoSelecionado.nome}</h3>
-              <p>{produtoSelecionado.descricao}</p>
+                      {produtoSelecionado.imagem2 && (
+                      <img src={produtoSelecionado.imagem2} controls></img>)}
+                      
+                      {produtoSelecionado.video && (
+                      <video src={produtoSelecionado.video} controls></video>)}
+      
+                      <div className="objetos-card">
+                          <h3>{produtoSelecionado.nome}</h3>
+                          <p>{produtoSelecionado.descricao}</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-          </div>
-      </Modal>
+          </Modal>
   )}
     
     <section id="desejados">
@@ -152,7 +161,8 @@ function Carrossel() {
         </div>
       </div>
     </section>
-  </>);
+  </>
+  );
 }
 
 export default Carrossel;
