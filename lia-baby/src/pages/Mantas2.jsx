@@ -3,6 +3,8 @@ import Mantas2 from "../assets/mantas 2 (2).jpeg";
 import Mantas3 from "../assets/mantas 2 (3).jpeg";
 import Mantas4 from "../assets/mantas 2 (4).jpeg";
 import Mantas5 from "../assets/mantas 2 (5).jpeg";
+import Mantas6 from "../assets/mantas 2 (6).jpeg";
+import Mantas7 from "../assets/mantas 2 (7).jpeg";
 
 
 
@@ -55,7 +57,7 @@ function CarrosselMantas2() {
                 </Modal>
         )}
 
-    <section id="mantas">
+    <section id="mantas2">
       <div className="container8">
         <h2 id="categoria6">Mantas</h2>
 
@@ -95,19 +97,19 @@ function CarrosselMantas2() {
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Mantas5
+                              imagem: Mantas6
                           })
                         }>
-              <img src={Mantas5}alt="amamentar4" />
+              <img src={Mantas6}alt="amamentar4" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta5
+                              imagem: Manta7
                           })
                         }>
-              <img src={Mantas5} alt="amamentar5" />
+              <img src={Mantas7} alt="amamentar5" />
             </div>
           </div>
 

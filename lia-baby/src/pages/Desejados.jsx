@@ -6,7 +6,8 @@ import Tapete from "../assets/tapete.jpeg";
 import Amamentar2 from "../assets/amamentar (2).jpeg";
 import Trocador from "../assets/trocador.jpeg";
 import Ninho from "../assets/trocador2.jpeg";
-import toalhaFlor from "../assets/toalhaFlor.jpeg"
+import toalhaFlor from "../assets/toalhaFlor.jpeg";
+import TrocadorLado from "../assets/trocadorLado(1).jpeg";
 
 import { useState } from "react";
 import Modal from "../Modal/Modal";
@@ -124,7 +125,8 @@ function Carrossel() {
               onClick={() => setProdutoSelecionado({
                 nome: "Trocador Americano",
                 descricao: "Para as necessidades do seu bebê.",
-                imagem: Trocador
+                imagem: Trocador,
+                imagem2: TrocadorLado
             })
           }>
                 <img src={Trocador} alt="" />

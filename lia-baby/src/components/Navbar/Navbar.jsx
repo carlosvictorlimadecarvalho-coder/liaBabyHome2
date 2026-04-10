@@ -69,7 +69,8 @@ function Navbar() {
           <div className="item2"><a href="#almofadaAma">Almofada</a></div>
           <div className="item2"><a href="#cortinado">Cortinado</a></div>
           <div className="item2"><a href="#dossel">Dossel</a></div>
-          <div className="item2"><a href="#mantas">Mantas</a></div>
+          <div className="item2"><a href="#mantas">Mantas em tricô</a></div>
+          <div className="item2"><a href="#mantas2">Mantas</a></div>
           <div className="item2"><a href="#segura">Segura neném</a></div>
           <div className="item2"><a href="#ninho">Ninho</a></div>
           <div className="item2"><a href="#kitBercoMaternidade">Kit Berço Maternidade</a></div>

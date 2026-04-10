@@ -19,7 +19,6 @@ import Trocador from "../assets/trocador.jpeg";
 import TrocadorLado from "../assets/trocadorLado(1).jpeg";
 import Ninho from "../assets/trocador2.jpeg";
 import Amamentar from "../assets/amamentar.jpeg";
-import Amamentar2 from "../assets/amamentar (2).jpeg";
 import Amamentar3 from "../assets/amamentar (3).jpeg";
 import Amamentar4 from "../assets/amamentar(4).jpeg";
 import Amamentar5 from "../assets/amamentar(5).jpeg";
@@ -32,11 +31,6 @@ import Dossel from "../assets/dossel.jpeg";
 import Dossel2 from "../assets/dossel (2).jpeg";
 import Segura from "../assets/segura.jpeg";
 import Segura2 from "../assets/seguranenem.jpeg";
-import KitBMat from "../assets/kit berço.jpeg";
-import KitBMat2 from "../assets/kit berço (2).jpeg";
-import KitBMat3 from "../assets/kit berço (3).jpeg";
-import KitBMat4 from "../assets/kit berço (4).jpeg";
-import KitBMat5 from "../assets/kit berço (5).jpeg";
 
 
 export const Home = ()=>{
