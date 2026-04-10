@@ -10,6 +10,8 @@ import KitBMat9 from "../assets/kit berço (9).jpeg";
 import KitBMat10 from "../assets/kit berço (10).jpeg";
 import KitBMat11 from "../assets/kit berço (11).jpeg";
 import KitBMat12 from "../assets/kit berço (12).jpeg";
+import KitBMat13 from "../assets/kit berço (13).jpeg";
+import KitBMat13Video from "../assets/kit berço (13).mp4";
 
 
 import { useState } from "react";
@@ -108,10 +110,11 @@ function KitBmaternidade() {
                 onClick={() => setProdutoSelecionado({
                   nome: "Kit Berço Maternidade",
                   descricao: "Conforto e estilo para o berço do seu bebê.",
-                  imagem: KitBMat5
+                  imagem: KitBMat13,
+                  video: KitBMat13Video
               })
             }>
-                  <img src={KitBMat5} alt="" />
+                  <img src={KitBMat13} alt="" />
                 </div>
   
                 <div className="card3"

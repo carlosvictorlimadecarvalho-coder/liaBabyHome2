@@ -1,11 +1,9 @@
-import Manta1 from "../assets/manta.jpeg";
-import Manta2 from "../assets/manta (2).jpeg";
-import Manta3 from "../assets/manta(3).jpeg";
-import Manta4 from "../assets/manta(4).jpeg";
-import Manta5 from "../assets/manta(5).jpeg";
-import Manta6 from "../assets/manta (6).jpeg";
-import Manta7 from "../assets/manta (7).jpeg";
-import Manta8 from "../assets/manta (8).jpeg";
+import Mantas1 from "../assets/mantas 2.jpeg";
+import Mantas2 from "../assets/mantas 2 (2).jpeg";
+import Mantas3 from "../assets/mantas 2 (3).jpeg";
+import Mantas4 from "../assets/mantas 2 (4).jpeg";
+import Mantas5 from "../assets/mantas 2 (5).jpeg";
+
 
 
 
@@ -14,7 +12,7 @@ import Modal from "../Modal/Modal";
 
 import { useRef } from "react";
 
-function CarrosselMantas() {
+function CarrosselMantas2() {
 
   const [produtoSelecionado, setProdutoSelecionado] = useState(null);
 
@@ -59,7 +57,7 @@ function CarrosselMantas() {
 
     <section id="mantas">
       <div className="container8">
-        <h2 id="categoria6">Mantas em tricô</h2>
+        <h2 id="categoria6">Mantas</h2>
 
         <div className="carrossel3">
           <button className="prev2" onClick={prev}>◀</button>
@@ -68,37 +66,39 @@ function CarrosselMantas() {
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta1
+                              imagem: Mantas1,
+                              imagem2: Mantas2,
                           })
                         }>
-              <img src={Manta1} alt="amamentar1" />
+              <img src={Mantas1} alt="amamentar1" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta2
+                              imagem: Mantas3
                           })
                         }>
-              <img src={Manta2} alt="amamentar2" />
+              <img src={Mantas3} alt="amamentar2" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta3
+                              imagem: Mantas4,
+                              imagem2: Mantas5
                           })
                         }>
-              <img src={Manta3} alt="amamentar3" />
+              <img src={Mantas4} alt="amamentar3" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Pano de Xixi",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta4
+                              imagem: Mantas5
                           })
                         }>
-              <img src={Manta4}alt="amamentar4" />
+              <img src={Mantas5}alt="amamentar4" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
@@ -107,24 +107,7 @@ function CarrosselMantas() {
                               imagem: Manta5
                           })
                         }>
-              <img src={Manta5} alt="amamentar5" />
-            </div>
-            <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Pano de Xixi",
-                              descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta6,
-                              imagem2: Manta7
-                          })
-                        }>
-              <img src={Manta6} alt="amamentar6" />
-            </div>
-            <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Pano de Xixi",
-                              descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta8
-                          })
-                        }>
-              <img src={Manta8} alt="amamentar6" />
+              <img src={Mantas5} alt="amamentar5" />
             </div>
           </div>
 
@@ -136,4 +119,4 @@ function CarrosselMantas() {
   );
 }
 
-export default CarrosselMantas;
+export default CarrosselMantas2;

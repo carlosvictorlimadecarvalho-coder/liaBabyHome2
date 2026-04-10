@@ -2,7 +2,8 @@ import "../styles/Home.css";
 import Navbar from "../components/Navbar/Navbar";
 import HorizontalScroll from "../pages/HorizontalScroll";
 import Desejados from "../pages/Desejados";
-import Mantas from "../pages/Mantas"
+import Mantas from "../pages/Mantas";
+import Mantas2 from "../pages/Mantas2";
 import KitBmaternidade from "./KitBMaternidade";
 
 
@@ -230,6 +231,8 @@ export const Home = ()=>{
 
 
         <Mantas/>
+        
+        <Mantas2/>
 
         {/*Segura Neném*/}
         <section id="segura">
