@@ -74,8 +74,6 @@ function Navbar() {
           <div className="item2"><a href="#segura">Segura neném</a></div>
           <div className="item2"><a href="#ninho">Ninho</a></div>
           <div className="item2"><a href="#kitBercoMaternidade">Kit Berço Maternidade</a></div>
-          <div className="item2"><a href="/">Kit Maternidade</a></div>
-          <div className="item2"><a href="/">Kit Berço</a></div>
         </div>
       </div>
     </>

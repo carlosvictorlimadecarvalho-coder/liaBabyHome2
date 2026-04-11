@@ -101,7 +101,7 @@ function Carrossel() {
               <div className="card"
               onClick={() => setProdutoSelecionado({
                 nome: "Tapete Bubbly",
-                descricao: "",
+                descricao: "Tapete macio.",
                 imagem: Tapete
             })
           }>
