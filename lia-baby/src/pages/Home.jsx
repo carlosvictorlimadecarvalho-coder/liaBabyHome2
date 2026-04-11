@@ -268,7 +268,7 @@ export const Home = ()=>{
                 <div className="cardNinho" onClick={() => setProdutoSelecionado({
                         nome: "Ninho",
                         descricao: "Ideal e confortável para seu bebê",
-                        imagem: Ninho                        
+                        imagem: Ninho
                     })
                     }>
                     <img src={Ninho} alt="ninho"/>
