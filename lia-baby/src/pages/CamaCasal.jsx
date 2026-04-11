@@ -1,11 +1,12 @@
-import Mantas1 from "../assets/mantas 2.jpeg";
-import Mantas2 from "../assets/mantas 2 (2).jpeg";
-import Mantas3 from "../assets/mantas 2 (3).jpeg";
-import Mantas4 from "../assets/mantas 2 (4).jpeg";
-import Mantas5 from "../assets/mantas 2 (5).jpeg";
-import Mantas6 from "../assets/mantas 2 (6).jpeg";
-import Mantas7 from "../assets/mantas 2 (7).jpeg";
-
+import Cama1 from "../assets/cama-casal.jpeg";
+import Cama2 from "../assets/cama-casal (2).jpeg";
+import Cama3 from "../assets/cama-casal (3).jpeg";
+import Cama4 from "../assets/cama-casal (4).jpeg";
+import Cama5 from "../assets/cama-casal (5).jpeg";
+import Cama6 from "../assets/cama-casal (6).jpeg";
+import Cama7 from "../assets/cama-casal (7).jpeg";
+import Cama8 from "../assets/cama-casal (8).jpeg";
+import CamaVideo from "../assets/cama-casal.mp4";
 
 
 
@@ -14,7 +15,7 @@ import Modal from "../Modal/Modal";
 
 import { useRef } from "react";
 
-function CarrosselMantas2() {
+function CarrosselCamaCasal() {
 
   const [produtoSelecionado, setProdutoSelecionado] = useState(null);
 
@@ -57,59 +58,51 @@ function CarrosselMantas2() {
                 </Modal>
         )}
 
-    <section id="mantas2">
+    <section id="CamaCasal">
       <div className="container8">
-        <h2 id="categoria6">Mantas</h2>
+        <h2 id="categoria6">Cama de Casal</h2>
 
         <div className="carrossel3">
           <button className="prev2" onClick={prev}>◀</button>
 
           <div className="carroselInterno3" ref={carrosselRef}>
             <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Manta",
-                              descricao: "Para aquecer e aconchegar seu bebê.",
-                              imagem: Mantas1,
-                              imagem2: Mantas2,
+                              nome: "Kit Cama de Casal",
+                              descricao: "Conforto e sofisticação.",
+                              imagem: Cama1,
+                              imagem2: Cama2,
                           })
                         }>
-              <img src={Mantas1} alt="amamentar1" />
+              <img src={Cama1} alt="amamentar1"/>
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Manta",
-                              descricao: "Para aquecer e aconchegar seu bebê.",
-                              imagem: Mantas3
+                              nome: "Kit Cama de Casal",
+                              descricao: "Conforto e sofisticação.",
+                              imagem: Cama6,
+                              imagem2: Cama7,
+                              video: CamaVideo
                           })
                         }>
-              <img src={Mantas3} alt="amamentar2" />
+              <img src={Cama6} alt="amamentar2" />
             </div>
 
             <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Manta",
-                              descricao: "Para aquecer e aconchegar seu bebê.",
-                              imagem: Mantas4,
-                              imagem2: Mantas5
+                              nome: "Kit Cama de Casal",
+                              descricao: "Conforto e sofisticação.",
+                              imagem: Cama3,
+                              imagem2: Cama4,
                           })
                         }>
-              <img src={Mantas4} alt="amamentar3" />
+              <img src={Cama3} alt="amamentar2" />
             </div>
-
             <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Manta",
-                              descricao: "Para aquecer e aconchegar seu bebê.",
-                              imagem: Mantas6
+                              nome: "Kit Cama de Casal",
+                              descricao: "Conforto e sofisticação.",
+                              imagem: Cama8
                           })
                         }>
-              <img src={Mantas6}alt="amamentar4" />
-            </div>
-
-            <div className="card2" onClick={() => setProdutoSelecionado({
-                              nome: "Manta",
-                              descricao: "Para aquecer e aconchegar seu bebê.",
-                              imagem: Mantas7
-                          })
-                        }>
-              <img src={Mantas7} alt="amamentar5" />
+              <img src={Cama8} alt="amamentar2" />
             </div>
           </div>
 
@@ -121,4 +114,4 @@ function CarrosselMantas2() {
   );
 }
 
-export default CarrosselMantas2;
+export default CarrosselCamaCasal;

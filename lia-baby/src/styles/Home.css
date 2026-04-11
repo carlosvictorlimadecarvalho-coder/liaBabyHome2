@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -157,9 +158,9 @@ body{
 
 #categoria1{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     position: relative;
-    top: 35px;
+    top: 20px;
 
 
     font-family: "Lora", serif;
@@ -167,32 +168,30 @@ body{
   font-weight: 300;
   font-style: normal;
 }
-#desejados{
-    background: white;
-    height: 800px;
-}
 .container3{
-    position: relative;
-  display: flex;
-  margin-top: 60px;
-  box-shadow: 1px 2px 10px;
-  border-radius: 20px;
-  width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 690px;
 }
 .centro{
     display: flex;
     justify-content: center;
 }
 .carrossel{
+    height: 560px;
   display: flex;
   gap: 20px;
-height: 600px;
+  margin-top: 40px;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   padding: 20px;
+  box-shadow: 1px 2px 10px;
 
   animation: opacidade2 0.5s ease;
-    animation-timeline: view();
+  animation-timeline: view();
 }
 
 .card{
@@ -203,7 +202,7 @@ height: 600px;
   align-items: center;
   box-shadow: 1px 2px 10px;
   justify-content: center;
-    background: rgb(245, 235, 220);
+  background: rgb(245, 235, 220);
   scroll-snap-align: start;
   border-radius: 20px;
 
@@ -275,6 +274,7 @@ button{
 }
 #categoria2{
     text-align: center;
+    font-size: 35px;
     position: relative;
     top: 10px;
 
@@ -282,7 +282,6 @@ button{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 30px;
 }
 .cards{
     display: flex;
@@ -293,12 +292,14 @@ button{
     animation: opacidade2 0.5s ease;
     animation-timeline: view();
 }
+.cardTrocador{
+    padding: 25px;
+}
 .cardTrocador img{
     width: 350px;
     height: 450px;
     box-shadow: 1px 2px 10px;
     border-radius: 20px;
-    margin: 30px;
 
     transition: transform 0.3s ease-in-out;
 }
@@ -314,6 +315,7 @@ button{
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
+    margin-top: 15px;
 }
 .cards img{
     width: 450px;
@@ -335,7 +337,7 @@ button{
 #categoria3{
     text-align: center;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     top: 20px;
 
     font-family: "Lora", serif;
@@ -386,7 +388,7 @@ button{
     text-align: center;
     position: relative;
     top: 20px;
-    font-size: 30px;
+    font-size: 35px;
 
     font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -453,7 +455,7 @@ button{
 
 #categoria5{
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
     top: 20px;
 
@@ -523,7 +525,7 @@ button{
 #categoria6{
     text-align: center;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     top: 25px;
 
     font-family: "Lora", serif;
@@ -535,7 +537,7 @@ button{
     margin-top: 10px;
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 670px;
     background: white;
 }
 .carroselInterno3{
@@ -566,7 +568,7 @@ button{
 }
 .card2{
     width: 1600px;
-    height: 500px;
+    height: 470px;
     margin-top: 20px;
   display: block;
   align-items: center;
@@ -609,7 +611,7 @@ button{
 #categoria7{
     text-align: center;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     top: 20px;
 
     font-family: "Lora", serif;
@@ -672,7 +674,7 @@ button{
 #categoria8{
     text-align: center;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     top: 20px;
 
     font-family: "Lora", serif;
@@ -731,7 +733,7 @@ button{
 #categoria9{
     text-align: center;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     top: 20px;
 
 

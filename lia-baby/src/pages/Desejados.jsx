@@ -56,10 +56,9 @@ function Carrossel() {
   )}
     
     <section id="desejados">
-      <h2 id="categoria1">Desejados</h2>
-
       <div className="centro">
         <div className="container3">
+          <h2 id="categoria1">Desejados</h2>
           <div className="carrossel">
 
             <button className="prev" onClick={handlePrev}>◀</button>

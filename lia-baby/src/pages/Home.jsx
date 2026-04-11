@@ -5,6 +5,7 @@ import Desejados from "../pages/Desejados";
 import Mantas from "../pages/Mantas";
 import Mantas2 from "../pages/Mantas2";
 import KitBmaternidade from "./KitBMaternidade";
+import CamaCasal from "../pages/CamaCasal";
 
 
 
@@ -108,6 +109,10 @@ export const Home = ()=>{
             </div>
         </div>
     </section>
+
+
+
+        <CamaCasal/>
 
 
 
