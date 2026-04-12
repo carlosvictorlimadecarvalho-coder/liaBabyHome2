@@ -47,7 +47,10 @@ export const Home = ()=>{
                 <img src={produtoSelecionado.imagem} alt="" />
 
                 {produtoSelecionado.imagem2 && (
-                <img src={produtoSelecionado.imagem2} controls></img>)}
+                <img src={produtoSelecionado.imagem2} alt=""/>)}
+                
+                {produtoSelecionado.imagem3 && (
+                <img src={produtoSelecionado.imagem3} alt=""/>)}
                 
                 {produtoSelecionado.video && (
                 <video src={produtoSelecionado.video} controls></video>)}
