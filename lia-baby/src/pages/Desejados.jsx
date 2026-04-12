@@ -8,6 +8,9 @@ import Trocador from "../assets/trocador.jpeg";
 import Ninho from "../assets/trocador2.jpeg";
 import toalhaFlor from "../assets/toalhaFlor.jpeg";
 import TrocadorLado from "../assets/trocadorLado(1).jpeg";
+import Colcha from "../assets/colcha.jpeg";
+import Colcha2 from "../assets/colcha (2).jpeg";
+import Colcha3 from "../assets/cama-casal (4).jpeg";
 
 import { useState } from "react";
 import Modal from "../Modal/Modal";
@@ -38,9 +41,15 @@ function Carrossel() {
               <div className="card-grande">
                   <div className="modal-body">
                       <img src={produtoSelecionado.imagem} alt="" />
+                      {produtoSelecionado.info1 && (<p className="colcha">{produtoSelecionado.info1}</p>)}
       
                       {produtoSelecionado.imagem2 && (
                       <img src={produtoSelecionado.imagem2} controls></img>)}
+                      {produtoSelecionado.info2 && (<p className="colcha">{produtoSelecionado.info2}</p>)}
+
+                      {produtoSelecionado.imagem3 && (
+                      <img src={produtoSelecionado.imagem3} controls></img>)}
+                      {produtoSelecionado.info3 && (<p className="colcha">{produtoSelecionado.info3}</p>)}
                       
                       {produtoSelecionado.video && (
                       <video src={produtoSelecionado.video} controls></video>)}
@@ -64,6 +73,21 @@ function Carrossel() {
             <button className="prev" onClick={handlePrev}>◀</button>
 
             <div className="carroselInterno" ref={carrosselRef}>
+
+              <div className="card" 
+            onClick={() => setProdutoSelecionado({
+                imagem: Colcha,
+                info1: "Opção de colcha",
+                imagem2: Colcha2,
+                info2: "Outra opção de colcha",
+                imagem3: Colcha3,
+                info3: "Terceira opção de colcha"          
+
+            })
+          }>
+                <img src={Colcha} alt="" />
+                <p>Opções de Colcha</p>
+              </div>
 
               <div className="card" 
             onClick={() => setProdutoSelecionado({

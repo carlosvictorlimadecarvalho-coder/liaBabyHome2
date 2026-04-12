@@ -40,10 +40,10 @@ function CarrosselCamaCasal() {
                             <img src={produtoSelecionado.imagem} alt="" />
             
                             {produtoSelecionado.imagem2 && (
-                            <img src={produtoSelecionado.imagem2} controls></img>)}
+                            <img src={produtoSelecionado.imagem2} alt=""></img>)}
     
                             {produtoSelecionado.imagem3 && (
-                            <img src={produtoSelecionado.imagem3} controls></img>)}
+                            <img src={produtoSelecionado.imagem3} alt=""></img>)}
                             
                             {produtoSelecionado.video && (
                             <video src={produtoSelecionado.video} controls></video>)}

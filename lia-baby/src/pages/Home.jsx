@@ -47,7 +47,7 @@ export const Home = ()=>{
                 <img src={produtoSelecionado.imagem} alt="" />
 
                 {produtoSelecionado.imagem2 && (
-                <img src={produtoSelecionado.imagem2} alt=""/>)}
+                <img src={produtoSelecionado.imagem2} alt=""></img>)}
                 
                 {produtoSelecionado.imagem3 && (
                 <img src={produtoSelecionado.imagem3} alt=""/>)}

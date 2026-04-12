@@ -37,20 +37,20 @@
     background: rgb(109, 102, 89);
 }
 .card1-panel img{
-    width: 1000px;
-    height: 580px;
+    width: 1100px;
+    height: auto;
     border-radius: 30px;
     box-shadow: 1px 2px 10px;
 }
 .card2-panel img{
-    width: 1000px;
-    height: 580px;
+    width: 1500px;
+    height: auto;
     border-radius: 30px;
     box-shadow: 1px 2px 10px;
 }
 .card3-panel img{
-    width: 900px;
-    height: 580px;
+    width: 1100px;
+    height: auto;
     border-radius: 30px;
     box-shadow: 1px 2px 10px;
 }
