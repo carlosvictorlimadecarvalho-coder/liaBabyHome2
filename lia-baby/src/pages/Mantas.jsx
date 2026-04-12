@@ -104,8 +104,7 @@ function CarrosselMantas() {
             <div className="card2" onClick={() => setProdutoSelecionado({
                               nome: "Mantas em tricô",
                               descricao: "Para as necessidades do seu bebê.",
-                              imagem: Manta6,
-                              imagem2: Manta7
+                              imagem: Manta6
                           })
                         }>
               <img src={Manta6} alt="amamentar6" />

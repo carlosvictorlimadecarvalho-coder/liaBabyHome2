@@ -184,7 +184,6 @@ export const Home = ()=>{
                         nome: "Cortinado",
                         descricao: "Crie um ambiente aconchegante para \n seu bebê",
                         imagem: Cortinado3,
-                        imagem2: '',
                         video: VideoCortinado
                         })
                     }>
