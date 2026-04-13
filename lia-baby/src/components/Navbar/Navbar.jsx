@@ -44,7 +44,7 @@ function Navbar() {
             <a href="#desejados">Produtos</a>
           </div>
           <div className="item">
-            <a href="/">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </div>
 
           <div className="posicaoHamburguer">

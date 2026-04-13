@@ -6,6 +6,7 @@ import Mantas from "../pages/Mantas";
 import Mantas2 from "../pages/Mantas2";
 import KitBmaternidade from "./KitBMaternidade";
 import CamaCasal from "../pages/CamaCasal";
+import Rodape from "../pages/Rodape";
 
 
 
@@ -286,7 +287,7 @@ export const Home = ()=>{
 
 
 
-
+    <Rodape/>
     </>
     )
 }

@@ -829,3 +829,51 @@ button{
     transform: scale(1.02);
     cursor: pointer;
 }
+
+
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.redes a{
+    background-color: white;
+    padding: 10px;
+    font-size: 23px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(185, 165, 141);
+
+    transition: transform 0.3s ease-in-out;
+}
+.redes a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contato{
+    display: flex;
+    justify-content: center;
+}
+.contato p{
+    color: rgb(255, 255, 255);
+}
+.logoFinal{
+    display: flex;
+    justify-content: center;
+}
+.logoFinal img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 25px;
+}
+.contato p{
+    font-family: "Montserrat", sans-serif;
+    margin: 30px;
+}
+.final{
+    display: flex;
+    justify-content: center;
+}
